@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Print list of integers"""
 
+# that retrieves an element from a list like in C.
 
-def print_list_integer(my_list=[]):
-    for i in my_list:
-        print("{:d}".format(i))
+def element_at(my_list, idx):
+    if idx < 0 or idx >= len(my_list):
+        return
+    return my_list[idx]
